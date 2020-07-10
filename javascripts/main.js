@@ -22,7 +22,8 @@ usersRef.on("child_added", snap => {
     let $li = document.createElement("li");
     $li.innerHTML = user.name;
     $li.setAttribute("child-key", snap.key);
-    $li.addEventListener("click", userClicked) userListUI.append($li);
+    $li.addEventListener("click", userClicked);
+    userListUI.append($li);
 });
 function userClicked(e) {
     var userID = e.target.getAttribute("child-key");
@@ -32,6 +33,6 @@ function userClicked(e) {
     userRef.on("child_added", snap => {
         var $p = document.createElement("p");
         $p.innerHTML = snap.key + " - " + snap.val();
-        
+        userListUI.append($li);
     });
 }
