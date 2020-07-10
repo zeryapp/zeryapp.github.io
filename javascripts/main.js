@@ -30,7 +30,7 @@ function userClicked(e) {
     userDetailUI.innerHTML = ""
     userRef.on("child_added", snap => {
         var $p = document.createElement("p");
-        $p.innerHTML = snap.key + " - " + snap.val() ;
-      userDetailUI.append($p);
+        $p.innerHTML = snap.key + " - " + snap.val();
+        
     });
 }
