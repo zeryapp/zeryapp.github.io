@@ -1,5 +1,3 @@
-console.log('This would be the main JS file.');
-console.log('This would be the main JS file.');
 // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyDoKWfOpjgFh8kmyv7bjptzJR3HuiRlVIk",
